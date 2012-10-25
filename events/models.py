@@ -5,7 +5,7 @@ class Event(models.Model):
     title = models.CharField(_('name'), max_length = 250)
     description = models.TextField(_('details'))
 
-    slug = models.SlugField(unique = True)
+    slug = models.SlugField()
 
     start_time = models.DateTimeField(_('start time'), blank = True, null = True)
     end_time = models.DateTimeField(_('end time'), blank = True, null = True)
